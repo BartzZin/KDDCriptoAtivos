@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+from AnaliseGeral import analisar_dados
 
 # 1. CARREGAMENTO DA BASE DE DADOS
 df = pd.read_csv("crypto_historical_365days.csv")
@@ -86,3 +87,5 @@ print("Base mensal preparada:", df_monthly.shape)
 
 # df -> base diária tratada
 # df_monthly -> base agregada mensalmente
+
+analisar_dados(df)
